@@ -1,13 +1,15 @@
-<!doctype html>
-<html ng-app="app">
+<html>
 <head>
-    <script src="../node_modules/angular/angular.min.js"></script>
-    <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles/demo.css">
+
 </head>
-<body ng-app="app">
+<body ng-app="app" ui-view>
     <div ui-view="header"></div>
     <div ui-view="content"></div>
     <div ui-view="footer"></div>
+
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
